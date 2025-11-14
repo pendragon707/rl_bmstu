@@ -20,3 +20,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1GeQuKU8kd89jakw9A1feJC59C-PROFY5?usp=sharing)
 
 ## 4. RL. Применение в робототехнике.
+- [Презентация](https://github.com/pendragon707/rl_bmstu/blob/master/4/4.pdf)
+
+- Лекция. Использование SB3 и Tensorboard
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1IX7Ei5l5wXioHXB8A6u-Ri-_pKnjnO0y/view?usp=sharing)
