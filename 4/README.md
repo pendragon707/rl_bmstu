@@ -21,7 +21,7 @@
   - Пример :  `python sb_rl.py -e Hopper-v5 -a SAC -n 1000000 -t`
  
 - **Monitor Training:**
-  - You can monitor the training process in real-time using TensorBoard.
+  - С помощью TensorBoard вы можете отслеживать процесс обучения в режиме реального времени.
     ```bash
     tensorboard --logdir [LogFolder]
 
@@ -35,11 +35,9 @@
   - Пример :  `python sb_rl.py -e Hopper-v5 -a SAC -s models/models_Hopper-v5/SAC_1000000.zip`
 
 ## Обучение робособаки
-Скрипт robodog.py
+Скрипт `robodog.py`
 
-Нужно скачать urdf или mjcf модель вашего робота. Можно использовать модели из [этого репозитория](https://github.com/google-deepmind/mujoco_menagerie.git), например.
-
-Загрузите репозиторий с моделями одним из этих двух способов:
+Нужно скачать urdf или mjcf модель вашего робота. Можно использовать модели из [этого репозитория](https://github.com/google-deepmind/mujoco_menagerie.git), например. Загрузите репозиторий с моделями одним из этих двух способов:
 
 `git submodule update --init --recursive`
 
