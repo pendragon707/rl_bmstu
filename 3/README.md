@@ -1,33 +1,38 @@
-# Gymnasium Examples
-Some simple examples of Gymnasium environments and wrappers.
-For some explanations of these examples, see the [Gymnasium documentation](https://gymnasium.farama.org).
+# Введение в gymnasium. Создание кастомной среды и обучение DQN-агента
 
-### Environments
-This repository hosts the examples that are shown [on the environment creation documentation](https://gymnasium.farama.org/tutorials/gymnasium_basics/environment_creation/).
-- `GridWorldEnv`: Simplistic implementation of gridworld environment
+---
+#### Сегодня мы:
+- Создадим кастомную среду в Gymnasium, аналогичную классической CartPole (обратный маятник)
+- Обучим агента с помощью Deep Q-Network (DQN)
+- Увидим, как гиперпараметры влияют на обучение модели
 
-### Wrappers
-This repository hosts the examples that are shown [on wrapper documentation](https://gymnasium.farama.org/api/wrappers/).
-- `ClipReward`: A `RewardWrapper` that clips immediate rewards to a valid range
-- `DiscreteActions`: An `ActionWrapper` that restricts the action space to a finite subset
-- `RelativePosition`: An `ObservationWrapper` that computes the relative position between an agent and a target
-- `ReacherRewardWrapper`: Allow us to weight the reward terms for the reacher environment
+Официальный гайд на создание кастомных сред в Gymnasium - https://gymnasium.farama.org/introduction/create_custom_env/
 
-### Contributing
-If you would like to contribute, follow these steps:
-- Fork this repository
-- Clone your fork
-- Set up pre-commit via `pre-commit install`
+## Устанавливаем необходимые библиотеки
 
-PRs may require accompanying PRs in [the documentation repo](https://github.com/Farama-Foundation/Gymnasium/tree/main/docs).
-
-
-## Installation
-
-To install your new environment, run the following commands:
-
-```{shell}
-cd gymnasium_env_RL_course
-pip install -e .
+```
+!pip install gymnasium
+!pip install pyvirtualdisplay # нужен для рендеринга в колабе
 ```
 
+Мы будем создавать среду, идентичную CartPole
+
+Структура проекта:
+
+
+```
+dima@dima-TBk-14-G7-AHP:~/projects/RL_course_2$ tree
+.
+├── gymnasium_env_RL_course
+│   ├── envs
+│   │   ├── cartpole_DQN_train.py
+│   │   ├── cartpole_env.py
+│   │   ├── __init__.py
+│   ├── __init__.py
+├── pyproject.toml
+├── run_DQN_cartpole.py
+├── setup.py
+
+```
+
+Более подробные инструкции смотрите в ноутбуке `2 - custom_env.ipynb`
