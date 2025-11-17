@@ -35,4 +35,4 @@ dima@dima-TBk-14-G7-AHP:~/projects/RL_course_2$ tree
 
 ```
 
-Более подробные инструкции смотрите в ноутбуке `2 - custom_env.ipynb`
+Более подробные инструкции смотрите в ноутбуке [`3 - custom_env.ipynb`](https://colab.research.google.com/drive/1GeQuKU8kd89jakw9A1feJC59C-PROFY5?usp=sharing)
